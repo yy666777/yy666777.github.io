@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="一年又一年，往事如云烟。归来又走远，在天边。
+
+
+只有河南，两天，3场主剧目，9场小剧目，带给我的冲击却远远不止这些。我仿佛随时都还能回到那一声声的呼唤、演员声嘶力竭的呐喊、齐整舞动的白色羽翼、和那飘散在空中久久回荡不去的悠扬歌声里。一直到..." />
+    <meta name="keywords" content="Postdoc" />
+    <link rel="stylesheet" href="https://yy666777.github.io/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://yy666777.github.io/styles/main.css">
+    <!-- 代码渲染风格css -->
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+    
+    <!-- 代码高亮插件 -->
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <!-- 代码复制插件 -->
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <!-- live2d插件 -->
+    <link rel="stylesheet" href="https://yy666777.github.io/media/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- 数学公式 -->
+    
+    <title>只有河南</title>
+
+    <!-- 大纲索引css调整 -->
+    
+    <style>
+        .markdownIt-TOC {
+            margin-left: 28%;
+            padding-left: 2px;
+            width: 80%;
+        }
+
+        .markdownIt-TOC li {
+            padding-left: 8%;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+    <div id="domainname" style="display:none">https://yy666777.github.io</div>
+    <div id="content">
+        <div>
+            <!----------- 移动端导航栏👇 ----------------->
+            <div id="bar">
+                <style>
+  .navmobile {
+    z-index: 15;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .navbar {
+      max-width: 100vw;
+    }
+  }
+
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .mbapspan {
+      padding: 0;
+    }
+  }
+</style>
+<div class="pjaxloading"  onclick="pjaxloadingClose()">
+  <div class="loadingbackground"></div>
+  <div id="loading">
+    <div class="loading">
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+        aria-expanded="false" id="barbutton">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a data-pjax class="navbar-brand" style="color:white" href="https://yy666777.github.io">清溪的博客&nbsp;&nbsp;|</a>
+      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="barmenu">
+      <ul class="nav navbar-nav">
+        
+        
+        <li>
+          <a data-pjax href="/" style="color:white">
+            首页
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/post/about" style="color:white">
+            关于
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tag/elementary_school" style="color:white">
+            总角之宴
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tag/middle_school" style="color:white">
+            豆蔻韶华
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tag/high_school" style="color:white">
+            少年听雨
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tag/undergraduate" style="color:white">
+            青春新章
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tag/postgraduate" style="color:white">
+            惜取今时
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tag/postdoc" style="color:white">
+            路漫漫兮
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        <li><a data-pjax href="https://yy666777.github.io/friends" style="color:white">友链</a></li>
+
+        
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+    let btstate = false;
+    var bt = $("#barbutton");
+    var bm = $("#barmenu");
+    bt.click(function () {
+      dropdown();
+    })
+    function dropdown() {
+      console.log(btstate);
+      //下拉
+      if (btstate == false) {
+        bt.removeClass("collapsed");
+        bt.attr("aria-expanded", "true");
+        bm.attr("aria-expanded", "true")
+        bm.fadeIn(700);
+        btstate = true;
+      }
+      else {
+        bt.addClass("collapsed");
+        bt.attr("aria-expanded", "false");
+        bm.removeClass("in");
+        bm.hide();
+        bm.attr("aria-expanded", "false");
+        btstate = false;
+      }
+    }
+  </script> 
+            </div>
+            <!----------- 移动端导航栏👆 ----------------->
+
+            <!--------------- pc端菜单栏👇 ---------------->
+            <div class="side"><head>
+    <link rel="stylesheet" href="https://yy666777.github.io/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://yy666777.github.io/styles/main.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://yy666777.github.io/media/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <!--------- 数学公式👇---- -->
+    
+    <!--------- 数学公式👆----------------- -->
+    <!--------- daovocie功能👇 ------------------->
+    
+    <!--------- daovocie功能👆 ------------------->
+    <!-- -----------------twikoo评论系统引入👇 --------->
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.3.1/dist/twikoo.all.min.js"></script>
+    <!-- -----------------twikoo评论系统引入👆 --------->
+    <!---------------- leancloud api 功能依赖引入👇 -------->
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script>
+    <!---------------- leancloud api 功能依赖引入👆 -------->
+    <!------------------ valine评论系统引入👇 ------------------>
+    <script src="https://yy666777.github.io/media/js/valine.min.js"></script>
+    <!------------------ valine评论系统引入👆 ------------------>
+    <!---------------- 今日诗词api功能依赖👇 ----------------------->
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <!---------------- 今日诗词api功能依赖👆 ----------------------->
+    <!---------------- 今日诗词api功能依赖👇 ----------------------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber.min.js" charset="utf-8"></script>
+    <!---------------- 哔哔功能依赖👆 ----------------------->
+
+
+</head>
+
+<style>
+    body {
+        overflow-x: hidden;
+        height: 100vh;
+        overflow-y: scroll;
+        cursor: url("https://yy666777.github.io/media/images/mouse_cursor.png"), auto
+    }
+</style>
+
+<body>
+    <!--=------ 页面加载动态画面👇 --------------->
+    <div class="pjaxloading" onclick="pjaxloadingClose()">
+        <div class="loadingbackground"></div>
+        <div id="loading-aname">
+            <div class="loading-aname">
+            </div>
+        </div>
+    </div>
+    <!--=------ 页面加载动态画面👆 --------------->
+
+    <!--------------- 左侧菜单栏👇 ------------------------>
+    
+    <div id=side>
+        <div class="r_m_div">
+            <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
+                        src='https://yy666777.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
+        </div>
+        <div class="avatar-border">
+            <img src="https://yy666777.github.io/images/avatar.png?v=1762572303564" class="avatar">
+        </div>
+        <div class="sitename">清溪的博客</div>
+        <span class="description" data-text='["清溪：一个勤勤恳恳努力生活的95后"]'>&nbsp;</span>
+        <div class="siteinfocontainer">
+            <span class="siteinfo">文章</span>
+            <span class="siteinfo">标签</span>
+        </div>
+        <div class="siteinfocontainer">
+            <span class="siteinfo" id="siteinfo-postsnum"></span>
+            <span class="siteinfo">6</span>
+        </div>
+        
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="文章搜索 ⚆_⚆ つ♡">
+            <div class="search-results"></div>
+        </div>
+        
+    <div class="share-button">
+        <span></span>
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    <div id="qq" style="display:none"></div>
+    <!------------ 加载菜单按钮👇 ------------------------->
+    <div class="menucontainer">
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="首页"></i>&nbsp;<span
+                    data-text="首页">首页</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/post/about" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="关于"></i>&nbsp;<span
+                    data-text="关于">关于</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/tag/elementary_school" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="总角之宴"></i>&nbsp;<span
+                    data-text="总角之宴">总角之宴</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/tag/middle_school" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="豆蔻韶华"></i>&nbsp;<span
+                    data-text="豆蔻韶华">豆蔻韶华</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/tag/high_school" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="少年听雨"></i>&nbsp;<span
+                    data-text="少年听雨">少年听雨</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/tag/undergraduate" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="青春新章"></i>&nbsp;<span
+                    data-text="青春新章">青春新章</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/tag/postgraduate" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="惜取今时"></i>&nbsp;<span
+                    data-text="惜取今时">惜取今时</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/tag/postdoc" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="路漫漫兮"></i>&nbsp;<span
+                    data-text="路漫漫兮">路漫漫兮</span>
+            </a>
+        </div>
+        
+        
+
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="https://yy666777.github.io/friends" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="友人帐"></i>&nbsp;<span data-text="友人帐">友人帐</span>
+            </a>
+        </div>
+        
+        <!--  -->
+    </div>
+    <!------------ 加载菜单按钮👆 ------------------------->
+    <hr>
+    <style>
+    .copyright {
+        font-size: 15px;
+        color: #d9d9d9;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        .foot {
+            width: 100%;
+            height: 130px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .foot {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="foot">
+        <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
+                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
+            <div>
+                
+            </div>
+            <div>
+                
+                <script async
+                    src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/busuanzi.pure.mini.js"></script>
+                <div id="vistornum" style="margin:0">
+                    <span id="busuanzi_container_site_uv">
+                        <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 总访问量:<span
+                            id="busuanzi_value_site_pv"></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <i class="fa fa-user-o" aria-hidden="true"></i> 访问人数:<span id="busuanzi_value_site_uv"></span>
+                    </span>
+                </div>
+                
+            </div>
+            <div class="copyright" style="color:white;text-align: center;">
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+    </div>
+
+    <img class="moon" src="https://yy666777.github.io/media/images/moon.png" onclick="moonlight()">
+    <script src="https://yy666777.github.io/media/js/wordshow.js"></script>
+    
+    <!--------------- 左侧菜单栏👆 ------------------------>
+
+    <!----------------- 顶部菜单栏👇 ------------------------>
+    
+    <!----------------- 顶部菜单栏👆 ------------------------>
+
+<!--核心功能加载-->
+<script src="https://yy666777.github.io/media/js/mainfunc.js"></script>
+
+<!------------- Fog1.0版本彩蛋👇 -------------->
+    <!-- <section id="terrestrial" class="popup">
+        <a href="#" class="back">&lt; back</a>
+    </section>
+
+    <div class="flycontainer">
+        <div class="flyword">御风飞行中...</div>
+    </div>
+
+    <script>
+        $("#fog_go").click(function(){fog_go()});
+        async function fog_go(){
+            $(".bars").hide()
+            $("#live2d").hide()
+            await sleep(3000);
+            $(".flycontainer").css("display","flex");
+            $(".popup").fadeOut(500)
+            await sleep(2000);
+            var sitename = "清溪的博客";
+            getFogUser(sitename);
+        }
+
+        function fog_goregis(){
+            var sitename = "清溪的博客";
+            var siteurl = "https://yy666777.github.io";
+            regisFogUser(sitename,siteurl);
+        }
+        fog_goregis();
+    </script> -->
+<!------------- Fog1.0版本彩蛋👆 -------------->
+<script>
+    function change_topmenu(){
+        tmcolor = "#d0ebff"
+        tsnamecolor = "#364fc7"
+        $(".navbar-inverse .navbar-nav>li>a").css("color",tmcolor)
+        $(".navbar-inverse .navbar-brand").css("color",tsnamecolor)
+        $(".navbar-fixed-top").css("border-radius","0 0 10px 10px")
+    }
+</script>
+
+<!------ 根据自定义配置声明变量👇 --------------------->
+    
+    <script>
+        var postnumChoice = true
+    </script>
+    
+    
+    <script>
+        var shareChoice = true
+    </script>
+    
+    
+    <script>
+        var donateChoice = true
+    </script>
+    
+    
+    <script>
+        var searchChoice = true
+    </script>
+    
+    <script>let postsnum = 0;</script>
+    <div id="side-posttitle" style="display: none;">
+    
+    
+    只有河南
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    留守城市
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    候机日记
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    这么多年
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    
+    
+    生命清单
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    读《星星上的人》有感
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    给12人的一封信
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    从冬至夏 Life at Boston
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    深夜汽笛
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    趁着还幼稚
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    下雪的日子里
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    致一段即将沉睡的记忆
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    折翼的月季
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    绿意盎然的窗子
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    夜雨
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    最后一瓣太阳草
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    明天我在哪里
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    含羞草
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    父母怎样才能更好地与孩子交流
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    云的生活
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    感悟生命
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+        <script>
+            var menupos = 'left';
+            $("#siteinfo-postsnum").html(postsnum);
+        </script>
+    
+    <script>
+        let commentsHide = false
+    </script>
+    <!------ 根据自定义配置声明变量👆 --------------------->
+
+
+    <!----------根据自定义配置设置图标信息👇---------->
+    <script>
+        var icondict = new Array();
+    </script>
+    
+        
+    
+    <!----------根据自定义配置设置图标信息👆---------->
+</body>
+
+<script src="https://yy666777.github.io/media/share/dist/Share.js"></script>
+<!-- 页面pjax测试 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.js"></script>
+<!--确保jQuery已经在此之前加载-->
+<!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script> -->
+<script src="https://yy666777.github.io/media/js/all-pjax.js"></script>
+<script>
+    //-------------------------------说说功能👇--------------------------------------
+    let talksall = [];
+    let talks = [];
+    let talkindex = 0;
+    get();
+
+    function get() {
+        var t = JSON.parse('[]');
+        talkindex = t.length - 1;
+        for (var i = 0; i <= t.length - 1; i++) {
+            var d = {};
+            d["time"] = t[i].time;
+            d["author"] = t[i].author;
+            d["text"] = t[i].text;
+            d["img"] = t[i].img;
+            talksall.push(d);
+        }
+    }
+
+    function add() {
+        for (var i = talkindex; i >= 0 && i > talkindex - 3; i--) {
+            talks.push(talksall[i]);
+        }
+        talkindex = (talkindex - 3) >= 0 ? (talkindex - 3) : -1;
+        if (talkindex < 0) $("#getmorebt").hide();
+        show();
+    }
+
+    function show() {
+        var talkT = document.getElementById("talkContainer");
+        talkT.innerHTML = "";
+        for (var i = 0; i < talks.length; i++) {
+            if (talks[i].img != '') {
+                talkT.innerHTML += '\
+            <div class="talk" v-for="t in talks"> \
+                <span data-fancybox="images" href="' + talks[i].img + '"><img src="' + talks[i].img + '" class="talkimg"></span> \
+                <div class="ainfo">\
+                    <div class="ainfo-intro">\
+                        <div class="author">' + talks[i].author + '</div>·\
+                        <div class="time">' + talks[i].time + '</div>\
+                    </div>\
+                </div>\
+                <div class="talkcontent">' + talks[i].text + '\
+                </div\>\
+            ';
+            } else {
+                talkT.innerHTML += '\
+            <div class="talk" v-for="t in talks"> \
+                <div class="ainfo">\
+                    <div class="ainfo-intro">\
+                        <div class="author">' + talks[i].author + '</div>·\
+                        <div class="time">' + talks[i].time + '</div>\
+                    </div>\
+                </div>\
+                <div class="talkcontent">' + talks[i].text + '\
+                </div\>\
+            ';
+            }
+        }
+    }
+    //-------------------------------说说功能👆--------------------------------------
+</script>
+
+<!---->
+<script>
+    function replaceAvatar() {
+        twikoo_avatar = $(".tk-avatar-img");
+        for (var i = 0; i < twikoo_avatar.length; i++) {
+            var asrc = twikoo_avatar.eq(i).attr('src');
+            if (asrc.search('cn.gravatar.com') != -1) {
+                twikoo_avatar.eq(i).attr('src', 'https://yy666777.github.io/media/images/comavatar.png');
+            }
+        }
+    }
+
+    function showWechat() {
+        var wechat = '';
+        alert("博主微信号：" + wechat);
+        return false;
+    }
+</script>
+
+<script>
+    /**
+     * https://github.com/tangkaichuan/gridea-search
+     */
+    // 检查缓存是否最新
+    function checkCache() {
+        var caches_postsnum = localStorage.getItem("postsnum");
+        var pt = document.getElementById("side-posttitle").innerHTML;
+        pt = pt.replace(/\s+/g, '').replace(/<script>.*?<\/script>/gi, "")
+        var ptlen = pt.length;
+        var ptlen_storage = localStorage.getItem("poststitlelen");
+        if (caches_postsnum != postsnum || ptlen != ptlen_storage) {
+            console.log("更新缓存");
+            return false
+        }
+        return true;
+    }
+
+    (function () {
+        var CACHES = checkCache()
+        if (!CACHES) {
+            var NOW = Date.now()
+            var API_CONTENT = '../api-content/index.html' + '?_=' + NOW
+            preload(API_CONTENT);
+            getContents(show_getContentresult);
+        }
+
+        function show_getContentresult(data) {
+            console.log("获取成功");
+            var postslen = data["posts"].length;
+            localStorage.setItem('postsnum', postslen);
+            var poststitlelen = 0;
+            var pt = document.getElementById("side-posttitle").innerHTML;
+            pt = pt.replace(/\s+/g, '').replace(/<script>.*?<\/script>/gi, "");
+            localStorage.setItem('poststitlelen', pt.length);
+        }
+
+
+
+        // preload
+        function preload(url) {
+            var preloadLink = document.createElement('link')
+            preloadLink.href = url
+            preloadLink.rel = 'preload'
+            preloadLink.as = 'fetch'
+            preloadLink.crossOrigin = 'anonymous'
+            document.head.appendChild(preloadLink)
+        }
+
+        // 异步 GET 请求
+        function get(obj) {
+            var xhr = new XMLHttpRequest()
+            xhr.open('get', obj.url, true)
+            xhr.send(null)
+            xhr.onreadystatechange = function () {
+                // 异步请求：响应状态为4，数据加载完毕
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        obj.success(xhr.responseText)
+                    } else {
+                        obj.error(xhr.status)
+                    }
+                }
+            }
+        }
+
+        // 获取博客全文 api
+        function getContents(callback) {
+            if (CACHES) {
+                callback(CACHES.contents)
+            } else {
+                get({
+                    url: API_CONTENT,
+                    success: function (data) {
+                        callback(JSON.parse(data));
+                        localStorage.setItem('ContentsCache', data);
+                        getStorageContent();
+                    }
+                })
+            }
+        }
+    })()
+    //------------------------核心功能--pjax全局渲染👇-------------------
+    let talkinit = false;
+    $(document).pjax('a[data-pjax]', '#main', {
+        fragment: '#main',
+        timeout: 8000
+    }).on('pjax:complete', function () {
+        //代码块高亮渲染
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+        //文章热度
+        if(postnumChoice){
+            getHotnum();
+        }
+        //文章索引
+        toginit();
+        //清空搜索栏
+        if (searchChoice) {
+            searchInit();
+            searchInput.value = "";
+        }
+        var pl = window.location.pathname;
+        //说说更新
+        if (pl.search("talk") != -1 && !talkinit) {
+            add();
+            talkinit = true;
+        } else if (pl.search("talk") != -1) {
+            show();
+        }
+        if (pl.search("post") != -1) {
+            if (shareChoice)
+                shareInit();
+            if (donateChoice)
+                donateInit();
+            if ("valine" == "default"&&!commentsHide) {
+                $("#comment").hide()
+                commentsHide = true
+            }
+            lazyload();
+            codeinit();
+            if ("valine" == "twikoo") {
+                //twikoo头像更换
+                setTimeout(replaceAvatar, 3000);
+                setTimeout(replaceAvatar, 8000); //部分博主站点速度加载过慢，再添加一个延迟
+            }
+        }
+        if (btstate == true)
+            dropdown();
+    }).on('pjax:start', function () {
+        $(".pjaxloading").fadeIn(50);
+    }).on('pjax:end', function () {
+        $(".pjaxloading").fadeOut(50);
+    });
+    //------------------------核心功能--pjax全局渲染👆-------------------
+
+    //-------------------------------------------------搜索
+    // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
+    if (searchChoice) {
+        var searchInput = document.querySelector('.search-input');
+        var searchResults = document.querySelector('.search-results');
+    }
+    // 申明保存文章的标题、链接、内容的数组变量
+    var searchValue = '',
+        arrItems = [],
+        arrLinks = [],
+        arrTitles = [],
+        arrContents = [],
+        arrResults = [],
+        indexItem = [],
+        itemLength = 0;
+    var tmpDiv = document.createElement('div');
+    tmpDiv.className = 'result-item';
+
+
+    function getStorageContent() {
+        var data = localStorage.getItem('ContentsCache');
+        data = JSON.parse(data);
+        posts = data["posts"];
+        for (var i = 0; i < posts.length; i++) {
+            arrLinks[i] = posts[i].link;
+            arrTitles[i] = posts[i].title;
+            arrContents[i] = posts[i].content;
+            itemLength++;
+        }
+    }
+    if (checkCache())
+        getStorageContent();
+    // 输入框内容变化后就开始匹配，可以不用点按钮
+    // 经测试，onkeydown, onchange 等方法效果不太理想，
+    // 存在输入延迟等问题，最后发现触发 input 事件最理想，
+    // 并且可以处理中文输入法拼写的变化
+    searchInput.oninput = function () {
+        setTimeout(searchConfirm, 0);
+    }
+    searchInput.onfocus = function () {
+        searchResults.style.display = 'block';
+    }
+
+    function searchConfirm() {
+        if (searchInput.value == '') {
+            searchResults.style.display = 'none';
+        } else if (searchInput.value.search(/^\s+$/) >= 0) {
+            // 检测输入值全是空白的情况
+            searchInit();
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '请输入有效内容...';
+            searchResults.appendChild(itemDiv);
+        } else {
+            // 合法输入值的情况
+            searchInit();
+            searchValue = searchInput.value;
+            // 在标题、内容中查找
+            searchMatching(arrTitles, arrContents, searchValue);
+        }
+    }
+
+    // 每次搜索完成后的初始化
+    function searchInit() {
+        arrResults = [];
+        indexItem = [];
+        searchResults.innerHTML = '';
+        searchResults.style.display = 'block';
+    }
+
+    function searchMatching(arr1, arr2, input) {
+        // 忽略输入大小写
+        input = new RegExp(input, 'i');
+        var step = 10;
+        // 在所有文章标题、内容中匹配查询值
+        for (i = 0; i < itemLength; i++) {
+            var indexContent = arr2[i].search(input);
+            //标题匹配
+            if (arr1[i].search(input) != -1) {
+                indexItem.push(i); // 保存匹配值的索引
+                if (indexContent != -1) {
+                    startindex = (indexContent - step) >= 0 ? (indexContent - step) : 0;
+                    var searchcontent = arr2[i].slice(indexContent - step, indexContent + 5)
+                    arrResults.push("....." + searchcontent + ".....");
+                } else
+                    arrResults.push("");
+            }
+            //内容匹配
+            else if (indexContent != -1) {
+                indexItem.push(i); // 保存匹配值的索引
+
+                startindex = (indexContent - step) >= 0 ? (indexContent - step) : 0;
+                var searchcontent = arr2[i].slice(indexContent - step, indexContent + 5)
+                arrResults.push("....." + searchcontent + ".....");
+            }
+        }
+
+        // 输出总共匹配到的数目
+        var totalDiv = tmpDiv.cloneNode(true);
+        totalDiv.innerHTML = '<b>总匹配：' + indexItem.length + ' 项<hr></b>';
+        searchResults.appendChild(totalDiv);
+
+        // 未匹配到内容的情况
+        if (indexItem.length == 0) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '未匹配到内容...';
+            searchResults.appendChild(itemDiv);
+        }
+
+        // 将所有匹配内容进行组合
+        for (i = 0; i < arrResults.length; i++) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerHTML = '<a data-pjax class="searchresults" href="' + arrLinks[indexItem[i]] + '"><b>[' +
+                arrTitles[indexItem[i]] +
+                ']</b><p>' + arrResults[i] + '</p></a><hr />';
+            searchResults.appendChild(itemDiv);
+        }
+    }
+</script>
+
+
+
+<!--------------------- 菜单栏图标加载功能👇 ----------------------->
+<script>
+var menulist = $(".menuicon");
+var menulength = menulist.length;
+for (var i = 0; i < menulength; i++) {
+    var altname = menulist.eq(i).attr("alt");
+    var iconurl = icondict[altname];
+    if (iconurl == undefined || iconurl == '')
+        continue;
+    if (iconurl == 'Home') {
+        menulist.eq(i).attr("src", "https://yy666777.github.io/media/images/Home.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Archive') {
+menulist.eq(i).attr("src", "https://yy666777.github.io/media/images/Archive.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Tag') {
+menulist.eq(i).attr("src", "https://yy666777.github.io/media/images/Tag.png");
+menulist.eq(i).show();
+} else if (iconurl == 'About') {
+menulist.eq(i).attr("src", "https://yy666777.github.io/media/images/About.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Talk') {
+menulist.eq(i).attr("src", "https://yy666777.github.io/media/images/Talk.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Friends') {
+menulist.eq(i).attr("src", "https://yy666777.github.io/media/images/Friends.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Fly') {
+menulist.eq(i).attr("src", "https://yy666777.github.io/media/images/wind.png");
+menulist.eq(i).show();
+} else {
+menulist.eq(i).attr("src", iconurl);
+menulist.eq(i).show();
+}
+}
+</script>
+<!--------------------- 菜单栏图标加载功能👆 ----------------------->
+
+<script>
+    //--------------------bber-onetalk加载👇--------------------------------
+    function bberonetalkLoad(){
+        bberjsonurl = '';
+        if ( $("#bber-talk").length > 0 ) {
+        jsonUrl = bberjsonurl
+        $.getJSON(jsonUrl+"?t="+Date.parse( new Date()),function(res){
+        var bberHtml = ''
+        $.each(res.data, function(i, item){
+            d = new Date(item.date)
+            date = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate() +' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
+            dataTime = '<span class="datatime">'+date+'</span>'
+            bberHtml += '<li class="item item-'+(i+1)+'">'+dataTime+'： <a data-pjax href="https://yy666777.github.io/bber">'+item.content+'</a></li>'
+        });
+        $('#bber-talk').append('<span class="index-talk-icon"><svg viewBox="0 0 1024 1024" width="21" height="21"><path d="M184.32 891.667692c-12.603077 0-25.206154-2.363077-37.809231-7.876923-37.021538-14.966154-59.864615-49.624615-59.864615-89.009231v-275.692307c0-212.676923 173.292308-385.969231 385.969231-385.969231h78.76923c212.676923 0 385.969231 173.292308 385.969231 385.969231 0 169.353846-137.846154 307.2-307.2 307.2H289.083077l-37.021539 37.021538c-18.904615 18.116923-43.323077 28.356923-67.741538 28.356923zM472.615385 195.347692c-178.018462 0-322.953846 144.935385-322.953847 322.953846v275.692308c0 21.267692 15.753846 29.144615 20.48 31.507692 4.726154 2.363077 22.055385 7.876923 37.021539-7.08923l46.473846-46.473846c6.301538-6.301538 14.178462-9.452308 22.055385-9.452308h354.461538c134.695385 0 244.184615-109.489231 244.184616-244.184616 0-178.018462-144.935385-322.953846-322.953847-322.953846H472.615385z"></path><path d="M321.378462 512m-59.076924 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M518.301538 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M715.224615 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153846 0 59.076923 59.076923 0 1 0-118.153846 0Z"></path></svg></span><ul class="talk-list">'+bberHtml+'</ul>')
+        //Lately({ 'target': '#bber-talk .datatime' });
+        });
+        function Roll (){
+        var list_li = $('.talk-list li'),cur_li = list_li.first(),last_li = list_li.last();
+        last_li.after(cur_li);
+        };
+        setInterval(Roll,3000);
+    }
+    }
+  //--------------------bber-onetalk加载👆--------------------------------
+</script>
+
+<script>
+    var ClicksideState = 1
+    var cur_readingmode = false
+    function readingmode(){
+        if (!cur_readingmode){
+            if(menupos == 'left'){
+                if(ClicksideState==1)
+                menu_openclose1()
+            }
+            $("#tab1").fadeOut(50)
+            $("#bg").fadeOut(50)
+            $(".navbar").fadeOut(50)
+            $(".markdownIt-TOC li a").css("color","black")
+            cur_readingmode = true
+        }else{
+            if(menupos == 'left'){
+                if(ClicksideState==0)
+                    menu_openclose1()
+            }
+            $("#tab1").fadeIn(50)
+            $("#bg").fadeIn(50)
+            $(".navbar").fadeIn(50)
+            $(".markdownIt-TOC li a").css("color","antiquewhite")
+            cur_readingmode = false  
+        }
+    }
+</script>
+
+
+<!----夜间模式👇-->
+<script>
+    var moonlightState = false
+    function moonlight(){
+        if(!moonlightState){
+            $("#bg").fadeOut(200)
+            $('body').css("background","rgba(0,0,0,0.8)")
+            $(".markdownIt-TOC li a").css("color","white")
+            $(".text p, .text ul").css("color","white")
+            $("#articlecontent").css("color","white")
+            $(".post-copyright").css("background","rgba(10,10,10,0.5)")
+            $('blockquote').css("background","rgba(10,10,10,0.6)")
+            $("#articlecontent").css("background","rgba(10,10,10,0.5)")
+            moonlightState = true
+            $(".moon").attr("src","https://yy666777.github.io/media/images/sun.png")
+        }else{
+            $("#bg").show()
+            $(".markdownIt-TOC li a").css("color","antiquewhite")
+            $(".text p, .text ul").css("color","rgba(0, 0, 0, 0.7)")
+            $("#articlecontent").css("color","black")
+            $(".post-copyright").css("background","#f9f9f9")
+            $('blockquote').css("background","#eff8f0")
+            $("#articlecontent").css("background","white")
+            $(".moon").attr("src","https://yy666777.github.io/media/images/moon.png")
+            $('body').css("background","white")
+            moonlightState = false
+        }
+    }
+</script>
+<!----夜间模式👆--></div>
+            <!--------------- pc端菜单栏👆 ---------------->
+
+            <!-- ----------------左侧菜单栏html 👇-------------------------------------->
+            
+            <div>
+                <div id="tab1" class="tab">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="close"></div>
+                </div>
+                <div class="col-md-1 col-lg-3"></div>
+                <!-- main标签，pjax渲染时加载以下内容👇 -->
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7" style="padding:0;">
+                    <div class="readingmode" onclick="readingmode()">阅</div>
+                    <link rel="stylesheet" href="https://yy666777.github.io/media/css/font-awesome.css">
+
+<body>
+    <div class="allcontent" id="postdetail">
+        <div class="postshow postpadding" style="padding-bottom: 0;">
+            
+            <div class="postdetailimg">
+                <img src="https://yy666777.github.io/post-images/zhi-you-he-nan.jpg" class="postimage" style="cursor:auto">
+            </div>
+            <div class="postinfo-detail">
+                <div class="postdate"><i class="fa fa-calendar"></i>2025-10-26</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 15 min read</div>
+                <div class="posttag">
+                    
+                    <a data-pjax href="https://yy666777.github.io/tag/postdoc/" class="postlink">
+                        <i class="fa fa-tag"></i> Postdoc
+                    </a>
+                    
+                </div>
+            </div>
+            
+        <div id="articlecontent">
+            <div id="texttitle" style="text-align: center">
+                <h2 id="ptitle">只有河南</h2>
+                <!-- id 将作为查询条件 -->
+                <div id="pl" style="display:none">https://yy666777.github.io/post/zhi-you-he-nan/</div>
+                <div id="rootaddr" style="display:none">https://yy666777.github.io</div>
+                
+                    
+                    <span id="hotnum">
+                        <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
+                                class="hotnum">loading...</i></h4>
+                    </span>
+                    
+                
+            </div>
+            <div class="text ">
+                <pre><code>一年又一年，往事如云烟。归来又走远，在天边。
+</code></pre>
+<!-- more -->
+<p>只有河南，两天，3场主剧目，9场小剧目，带给我的冲击却远远不止这些。我仿佛随时都还能回到那一声声的呼唤、演员声嘶力竭的呐喊、齐整舞动的白色羽翼、和那飘散在空中久久回荡不去的悠扬歌声里。一直到在新加坡日复一复地工作了两周，才慢慢磨去了只有河南带给我的震撼和感触。</p>
+<p>去只有河南之前，我从来没有想到有人能把戏剧做到如此艺术与现实结合的直击灵魂。我以为会是类似于春晚戏剧表演那样，顶多把传统戏剧加入现代元素，但我没想到是类似于舞台剧，形式丰富异常。从歌舞到小品到道具到表演形式到舞台整体调度，再到演员和观演者的实时互动，可以说，只有河南打破了时间和空间两个维度的禁锢。</p>
+<p>幻城剧场，有可以上下移动的弘大亭台楼阁庙宇建筑，复现了河南古代的繁盛时期，把古人的生活再现在我们眼前。也有抽象意义上的高维空间，剧院的顶非常高，在遥远的四方高空有伫立的不同时代的古人，当他们发出一声声疑问“就是这里吗？就是这里啊”的时候，当他们化成一个个精灵天使长出翅膀翩翩起舞的时候，你仿佛就有一种感觉，感觉古今的时空在这里汇聚，古老的前辈英烈们在微笑地注视着我们，注视着自己的子孙后辈们在这片土地上写出不一样的故事。那一瞬间，我清晰地意识到，齐舞是有力量的，人多成众是有力量的，当洁白的杂乱的根根直立的羽翼在演员背后齐刷刷地展开又成规律地一排排舞动时，我看到的不是演员，而是真正的精灵是守护神是信仰化成的力量。当武则天迁都洛阳，兴建明堂天堂举行仪式时，所有亭台楼阁、桥梁小径上的人们齐齐下跪、对着四方先祖天地万民进行跪拜时，我真的好像穿越到了古代看到了那弘大的皇权所带来的庄严和权力。而当风云突变，大祭司占卜出有未来时空的人在注视着他们那里的时候。有一层细细密密的鸡皮疙瘩悄悄爬上了我的手臂，有一种被注视的人反向窥视的感觉。只有河南里类似的设计数不胜数，从台词舞台设计到行进式的互动，都增添了观众的参与感。</p>
+<p>就拿《火车站》和《李家村》两个主剧场来说，他们是两个分开的故事，却又互相关联完整故事脉络，另外还和小剧《麦子的故事》有深层意义上的联系。火车站和李家村不得不说是设计得独具匠心的。整体呈现的故事是1942年河南大饥荒，但入手的点非常特别，是李家村的一对兄弟李十一和李十八的兄弟情深。火车站里有三个分场景，第一个情景是一个单面镜一样的环形舞台，演员在玻璃后面表演，随着灯光的明暗突出不同的人物位置和装置。在这里讲述了一个李十八的成长故事，作为家里的从小丧失双亲的幺子，李十八可以说是在哥哥的溺爱中长大的，李十一会背着他给他打枣吃，会无条件地给他的一切顽皮兜底，甚至在李十一的儿媳妇阴差阳错和李十八互生情愫时，自作主张把原儿媳嫁给了弟弟。但是故事讲到这里，李十八的自述却说是哥哥杀死了他，距离他的死亡还有30分钟。这时候，场内有几个“工头”一样的人物交代了饥荒的大背景，并决定去火车站找站长李十八要他开仓放粮食。有意思的是，我们这些站立观演的观众就成了这些号召者的“追随者”，他们手拿火把脚步坚定，引领着我们去到各个难民营，和他们集合一起去火车站要粮食。我这才理解了何为“行进式”的观演方式，原来是有好多个不同的场景可以由观众去探索。</p>
+<p>到这时候我也情绪高涨地跟上步伐加入要粮大军，环形剧院的四周开了不知多少个小门，每一个门出来都挨着不同的营帐，我就跟着指引随机进入了其中一个营帐。营帐内只容十几人而已，踏上躺着一个病恹恹的男人，坐着的另一个女演员看我们进来，说，快进来，都小点声。原来这是一对夫妻，女生是护士站的大夫。女演员跳了几个现场前排的观众简单互动了一下，问从哪来的，又看脸色不好可以把个脉云云。后面进入正题，和男人演了一出有家传毒药方但不想以此换粮最后宁愿吞下使其失传的戏码。不得不说，男演员的窝囊体质演得还是挺好的，靠着女人要粮食还怨怼不已最后丧失理性。这个时候，突然有遥远的号角声又或是警笛声响起，女演员紧张兮兮地说要我们抓紧转移，遂进入第二个帐篷。这种高度的参与感确实很有意思，让我体验了一把那种兵荒马乱的感觉（但不好的是后面李家村转移的时候有一段遇到素质不高的游客推搡拥挤）。第二个营帐我幸运的和演员对上视线，这个男演员皮了一下，说把我们作为储备粮都吃了。哈哈，我看他看我，就说我不好吃，他说还没点我我就主动应了。又说戴眼镜应该很聪明，吃了我也能变聪明。我说吃了我近视会遗传，结果他说那不是遗传是传染吧。这人还挺聪明嘞，看来你不用吃我也够聪明了哈哈。最后一句是我现在写的时候想的，当时随机发挥，没想到这一层，没能接上话。现在想来，我当时可以说这句，或者说“人吃人会得朊病毒，你也活不成。我这么聪明，你不得信我吗？”或者说“你看我遗传都说错了，也不聪明，你不必吃我了”。不过总而言之，我玩得还挺愉快的，参与感很强。</p>
+<figure data-type="image" tabindex="1"><img src="https://yy666777.github.io/post-images/1761801788270.jpg" alt="" loading="lazy"></figure>
+<center>
+<p>最后的枣</p>
+</center>
+<p>到第二次号角声响起的时候，我们就奔赴火车站大本营了。那是一个巨大的场景。靠里一侧像是一面山体，有一个巨大的洞口，像是粮仓的入口，上面写着类似于“粮在我在”的李十八作为站长被要求守护粮食的宣言。另外一侧我们进来的地方二楼有一个长长的平台和拦得密不透风的巨大一面铁丝网。底下，是场馆内无数的看客；外面的平台上，是无数赶来要粮食的灾民。他们的呐喊声、求救声、绝望的哀鸣声，如一声声擂鼓，敲击在我的心口。尤其是当这些衣衫褴褛的人抓着铁丝网暴乱不止，后来被点破这不是站长李十八的过错时，他们齐齐下跪磕头，齐声悲泣“苍天不公！”的时候，那一刻的震撼、震人心脾！李十八最后还是给了粮食，因为李十一，最疼爱他的哥哥出现在了难民中间，他步履蹒跚、声音嘶哑，再不复上一幕李十八童年时的那样宽厚的声音。他要粮食，但不是为了吃，是为了种下，他要的是种子。他年老衰败的声音悲哀地说“没有种子，河南人民就都活不成了呀”。李十八崩溃了，他质问李十一，知不知道自己会因此而死，他不是最疼爱自己的哥哥了吗？李十一好像回魂一样，突然意识到自己再干什么，他也崩溃了，他说自己不要粮了，他只要兄弟活着。但是李十八还是给他粮食了。在决心放粮前，他问哥哥带枣了，想让哥哥再喂他一次枣吃。当高墙铁丝网上的李十一随着高墙一起缓慢倒下，最终降到了李十八面前，把枣递给他时，这种视觉和情感的双重震撼，令人泪目！看完这幕之后，我久久不能回神。李十八死于护粮不力，被判枪决，只留一件血衣。得知消息后的李十一，疯了。我原本不解，为什么李十一和李十八会成为两个相对立的阵营，最终导致如此的惨剧。我本以为是粮食有其他的用途，没有办法放给所有灾民。后面我上网查询，才知道是国民党时期不顾百姓的不当措施。</p>
+<figure data-type="image" tabindex="2"><img src="https://yy666777.github.io/post-images/1761801829765.jpg" alt="" loading="lazy"></figure>
+<center>
+<p>赴死之人的雪</p>
+</center>
+<p>《李家村》剧场讲述地则是没有跟随灾民大军去要粮的村里的视角。村里破败不堪，我们进村的时候，路上就躺着很多灾民，有的人还在微弱地挣扎着。我去到的小房间是一个曾经的饭店，那里早已经落满了灰尘，写着菜名的牌子七零八落的挂在墙上，角落里隐约还能看见蜘蛛网的痕迹。女主的父亲和要粮大军一起出发了，她的叔叔觉得等了好几天没有消息想要逃荒去，但是女主不肯，要继续等着。后来，跟着熟悉的号角声，我们转移到了一个广场上，看到人们奔走相告，说李十一回来了，粮食要到了。收到李十八的死讯后，李十一变得有些疯疯癫癫的了，他在屋里一整天没有出来，但是即便已经疯癫了，他仍然没有忘记自己要粮的目的——种子。李十一把这些粮食拿出来，告诉人们这是种子，不能吃，要留给子孙后代去种，河南人才能延续下去。我以为会有矛盾会有争执会有暴乱，毕竟谁能指望饿了许久肚子的难民有多少理智呢？但是竟然没有。人们在挣扎后绝望而悲哀地同意了。老人们唤来儿女，把希望的种子交给了他们，然后毅然决然地走向了深山，走上了高地，走进了雪原。他们说，怎么还能看见身后送行的孩子们呢，他们要走得再远一点，远到不让孩子们看到而伤神。他们忍饥挨饿，他们呼唤有一场大雪可以早些结束这一切。大雪应声而至，当大雪肆虐的时候，当他们站在遥远的山岗上被大雪埋葬的时候，着实让我震撼非常！《李家村》的最后一幕是集现代生活与幻想艺术于一体的展示舞台。有一排排金黄色的麦子上下舞动，有稻草人在田间，有李十一遥远的呼唤声“赖补寄啦”（来不及啦），要把麦子在寒露前种到田里去。巧合的是，2025年的寒露是10月8日，正是我们观看剧目的那一天。更加细节的布置是，最后一幕的座位上，写着的是李家村一个个的人名。直到演毕离席时我才看到这一点，或觉几分庄严凄婉之感。</p>
+<figure data-type="image" tabindex="3"><img src="https://yy666777.github.io/post-images/1761801871660.png" alt="" loading="lazy"></figure>
+<center>
+<p>李家村人的座位</p>
+</center>
+<p>1942年大饥荒的惨剧、农民的惨剧和挣扎，或许直到今日也没能完全摆脱。我去到只有河南的时候，华北平原已经连续下了一个月的雨，连绵的阴雨使田里大涝，完全进不去人收获玉米。玉米也没有阳光晒好，从而生了霉菌。有些人家为了抢收，自身也被传染了菌，染了病。有媒体写道，“今年夏天没被旱死的玉米，终于淹死在了秋天”。读来只觉悲怆。回忆起我在只有河南看到的剧目，只感觉过去的农民的挣扎仍在上演。<br>
+再说说其他的几个小剧目，几乎每场剧目都有其可圈可点之处。有的剧目情节设计紧凑，台词清晰，如《候车大厅》，用一条传送带连接了历史的长河，用人们的寄存物品暗示了不同时期不同选择下人们的命运走向。有的剧目贴近生活，使人触景生情，如《老院子》，几位老演员的自然动情的演绎让人信服他们的身份，好像他们就是那拆迁后定期聚会的老邻居、心有蔷薇但又不得不被时代抛在后头，当他们挥手向观众告别说“让他们走吧”、“让他们回到更好的地方”的时候，心头涌上一股酸涩。有的剧目的演员非常有感染力，比如《天子驾六》的考古队员，让人感受到历史变更、岁月无常下曾经的庄严。有的剧目的情节非常独特，比如《薛怀义》，并不统一褒扬或贬低这位历史上有争议的演员，而是复杂地、多面性地讲述了他的野心、他的争宠、以及后续权力之争失败失宠后的疯狂。火烧明堂天堂的时候，不知道他的心里到底在想什么呢？“我是有能量的，我有毁灭的能量，我得不到的，谁也别想得到”。他是偏执的，是疯狂的，但又不像普通的反派是脸谱化的情绪和行动。我想，他玩弄人心，却又看不透这人心的凉薄吗？武则天在这部剧里也让我印象深刻。她只有短短几句台词，却用轻描淡写的语言表达了大权在握、平衡各方势力、玩弄权力的高深莫测。别人汇报薛怀义的狐假虎威时，她说“我知道。”；别人回报薛怀义想走正门但被大臣打骂时，她说“我知道。”别人汇报他烧了明堂天堂时，她说“烧了就烧了吧。”最后薛怀义被上谏执行死刑时，她说“他也该死了。”她看透一切，却不作为不出手干预自己爱宠的行为，或许，薛怀义只是她闲来无事时的消遣吧。还有《苏轼的河南》，向人们展示了一个不一样的苏轼，他不够高洁不够释然，他期待着回到汴京有能够重新被重用的一天，为此哭为此笑为此狂，却最终死在了外地。或许，这份执念是他遗言要葬在河南的原因吧。只有河南的导演和编剧可以发觉到这些历史人物如此细节的生平和他们背后的心理历程，想必也是废了一番心神的。同样的，《曹操的麦田》也是讲了一个历史上褒贬不一的人物，被后世当做佞角演绎的曹操却能在行军时下令不许践踏麦田，并为自己的马儿不小心踩到麦子而“割发代首”。《李明旦书场》，讲了一个说书人的坚守和为坚守事业献身的勇气。<br>
+从只有河南走出来的每一个人几乎都会唱这里的主题曲，那些歌声飘荡在空中，陪着人群进进出出，看人涌又人散。这些歌词，不仅描写了河南这片土地上一代代的前辈们的来来往往，也诉说着现代人的成长和离开。或许，它们也像是河南这片土地带来的呢喃和呼唤，呼唤着离乡的人们踏上归乡的路，再看一眼家乡重新焕发出的生机。</p>
+<p>一年又一年，往事如云烟。归来又走远，在天边。<br>
+我的过去啊，我的未来啊，就在转眼间，化成金黄一片。<br>
+那些往事啊，那些故人啊，来不及告别，风吹起又飘散。<br>
+——《一年又一年》只有河南主题曲</p>
+<p>消失的人们，如今都去了哪里？未知的岁月，等待和谁再相聚？<br>
+——《夜幕降临之前》只有河南主题曲</p>
+
+            </div>
+            <hr style="width: 80%;">
+            
+            <div class="donateContainer">
+                <span class="donatebtn">赏</span>
+            </div>
+            <div class="donateContainer">
+                <img src="" alt="" class="donate">
+            </div>
+            
+            <div class="postfooter">
+                <ul class="post-copyright">
+                    <li><strong>文章作者：</strong>清溪</li>
+            <li><strong>原文链接：</strong>https://yy666777.github.io/post/zhi-you-he-nan/</li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
+                许可协议。转载请注明出处！</li>
+            </ul>
+        </div>
+        
+            <div class="shareContainer">
+                <div class="share" style="height:30px;">
+                    <a class="qq" href=""><i><img class="shareicon"
+                                src="https://yy666777.github.io/media/images/qqs.png" alt=""></i></a>
+                    <a class="wechat" href=""><i><img class="shareicon"
+                                src="https://yy666777.github.io/media/images/wechats.png" alt=""></i></a>
+                    <a class="weibo" href=""><i><img class="shareicon"
+                                src="https://yy666777.github.io/media/images/weibos.png" alt=""></i></a>
+                    <a class="qzone" href=""><i><img class="shareicon"
+                                src="https://yy666777.github.io/media/images/qzones.png" alt=""></i></a>
+                    <a class="douban" href=""><i><img class="shareicon"
+                                src="https://yy666777.github.io/media/images/doubans.png" alt=""></i></a>
+                    <a class="facebook" href=""><i><img class="shareicon"
+                                src="https://yy666777.github.io/media/images/facebooks.png" alt=""></i></a>
+                    <a class="twitter" href=""><i><img class="shareicon"
+                                src="https://yy666777.github.io/media/images/twitter.png" alt=""></i></a>
+                </div>
+            </div>
+            
+        <div id="otherpost">
+            
+            
+            <a data-pjax class="next-post-pc" href="https://yy666777.github.io/post/liu-shou-cheng-shi/"  style="color: black;">
+                <div id="npcontainer">
+                    
+                    <img src="https://yy666777.github.io/post-images/liu-shou-cheng-shi.png" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">留守城市</h4>
+                </div>
+            </a>
+            <div class="next-post">
+                下一篇 <a  data-pjax href="https://yy666777.github.io/post/liu-shou-cheng-shi/">留守城市</a>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
+    </div>
+</body>
+<script>
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
+</script>
+                    <div class="toc-container">
+                        
+                    </div>
+                    <div class="tog">
+                        <div class="toggleContainer">
+                            <div class="toggle">
+                                <i class="fas fa-angle-double-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------------------- 评论系统👇 ------------------------->
+                    <div id="comment" class="comment">
+                        <div class="commentcontainer">
+                            
+                                
+                                    
+        <div id="vcomments">
+        </div>
+        <script>
+            var valine = new Valine();
+            var curpath = window.location.pathname;
+            if (curpath[curpath.length - 1] != '/')
+                curpath += '/'
+            valine.init({
+                el: '#vcomments',
+                appId: '82GDS1nPJ8jFc9h7iz8b3POC-gzGzoHsz',
+                appKey: '0MprDycq6FAMcftF4v9L9iLR',
+                avatar: 'retro',
+                pageSize: 10,
+                placeholder: '既然来了，何不畅所欲言呢？',
+                recordIP: true,
+                path: curpath //[重点] 记得添加path路径
+            });
+        </script>
+        <script type="text/javascript">
+            var jrsc = '既然来了，何不畅所欲言呢？';
+            jinrishici.load(function (result) {
+                // 自己的处理逻辑
+                jrsc = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+                    .dynasty + " · " + result.data.origin.author;
+            });
+        </script>
+
+
+                                    <div class="clear"></div>
+                                
+                            
+                        </div>
+                    </div>
+                    <!---------------------------- 评论系统👆 ------------------------->
+                </div>
+                <!-- main标签，pjax渲染时加载以上内容👆 -->
+                <div class="col-md-1 col-lg-2"></div>
+                <div id="bg">
+                </div>
+            </div>
+            <!-- ----------------左侧菜单栏html 👆-------------------------------------->
+            
+        </div>
+        <!-- aplayer播放器加载👇 -->
+            
+        <!-- aplayer播放器加载👆 -->
+    </div>
+    <!-- 背景图加载方式👇 -->
+    <div id="bgchoice" style="display: none">default
+                </div>
+                
+                <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
+                
+    <!-- 背景图加载方式👆 -->
+</body>
+
+<script>
+    //初始化
+    //更换twikoo头像
+    setTimeout(replaceAvatar,1000);
+    setTimeout(replaceAvatar,2000);
+    setTimeout(replaceAvatar,8000);
+    // --------为每张图片添加懒加载（lazyload）标签-->懒加载功能 👇------------
+    lazyload();
+    //为文章内所有代码块添加代码复制功能 👇
+    codeinit();
+    // ------代码高亮显示功能-------------
+    hljs.initHighlightingOnLoad();
+    if (shareChoice)
+        shareInit();
+    if (donateChoice)
+        donateInit();
+</script>
+
+<!------------------ 加载live2d模型功能（看板娘）👇 ---------------->
+
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://yy666777.github.io/media/js/live2d.js"></script>
+<script type="text/javascript" src="https://yy666777.github.io/media/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://yy666777.github.io/media/live2d/assets/tororo.model.json");
+</script>
+
+<!------------------ 加载live2d模型功能（看板娘）👆 ---------------->
+
+
+<!----------------------- 返回顶部按钮功能👇 --------------------->
+<script>
+    $(function () {
+        $('.toggleContainer').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+        $(window).scroll(function () {
+            var st = $(window).scrollTop();
+            if (st > 30) {
+                $(".toggleContainer").fadeIn(400);
+            } else {
+                $(".toggleContainer").fadeOut(100);
+            }
+        });
+    });
+</script>
+<!----------------------- 返回顶部按钮功能👆 --------------------->
+
+
+<!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
+<script>
+    var bgchoice = "default"
+    var bg = $('#bg');
+    var bgurl = document.getElementById("bgurl").innerHTML;
+    if (bgchoice == 'default')
+    {
+        for (var i = 0; i < 3; i++)
+            bgurl = bgurl.replace("\\", "/");
+        bgurl = "https://yy666777.github.io/" + bgurl;
+    }
+    bg.css("background", "url('" + bgurl + "')");
+
+    window.onload = function () {
+        aplayerbtnInit();
+    }
+</script>
+<!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
+
+
+
+
+<script src="https://yy666777.github.io/media/js/index.js"></script>
+
+
+<script>
+    //加载后的事件同步（阅读量、移动端评论等
+    window.onload = function () {
+    //代码块高亮渲染
+    document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+    });
+        getHotnum();
+        var sharepc = $(".share").eq(0).html();
+        $(".share").eq(1).html(sharepc);   //插件只会寻找一个分享标签渲染，所以需要手动添加到移动端
+        aplayerbtnInit();
+        $(".hljs").css({
+            "padding": "20px"
+        })
+    }
+</script>
+
+<!-- <script src="https://yy666777.github.io/media/js/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->
